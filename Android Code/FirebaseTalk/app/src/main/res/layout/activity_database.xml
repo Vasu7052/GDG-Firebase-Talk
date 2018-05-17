@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatabaseActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+
+    <EditText
+        android:id="@+id/etData"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:hint="Enter Items Here"
+        android:inputType="textEmailAddress"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_margin="5sp"
+        android:layout_weight="0.8"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="60sp"
+            android:text="Add"
+            android:background="#ffffff"
+            android:layout_margin="5sp"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5sp"></ListView>
+
+
+
+
+</LinearLayout>

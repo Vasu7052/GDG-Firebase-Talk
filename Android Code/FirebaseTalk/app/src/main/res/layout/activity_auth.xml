@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basic Authentication"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+       android:layout_marginTop="50sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50sp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/emailSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:hint="Enter Email Here"
+            android:inputType="textEmailAddress"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_margin="5sp"/>
+
+        <EditText
+            android:id="@+id/passSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:hint="Enter Password Here"
+            android:inputType="textPassword"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_margin="5sp"/>
+
+        <Button
+            android:id="@+id/btnSIgnUp"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:text="Sign up"
+            android:background="#ffffff"
+            android:layout_margin="5sp"/>
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_margin="5sp"
+            android:background="#ffffff"
+            android:text="Sign in" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
